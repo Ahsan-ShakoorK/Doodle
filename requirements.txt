@@ -1,16 +1,8 @@
-name: Integration Test
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - name: Self test
-        id: selftest
-
-        uses: ryan-rozario/pipreqs-action-cpy@master
-
-        # Put an example of mandatory inputs here
-        with:
-          PROJECT_PATH: project_folder   #default is the root of the repository
-          REQUIREMENT_PATH: project_folder/requirements.txt  #default is requirement.txt in the root of your repository 
+numpy==1.23.1
+pandas==1.4.3
+Pillow==9.2.0
+scikit_learn==1.1.2
+seaborn==0.11.2
+streamlit==1.12.2
+streamlit_drawable_canvas==0.9.2
+tensorflow==2.10.0
